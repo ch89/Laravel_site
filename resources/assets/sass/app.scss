@@ -1,0 +1,15 @@
+@import 'helpers/variables';
+@import 'helpers/placeholders';
+@import 'helpers/mixins';
+
+@import 'components/buttons';
+@import 'components/nav';
+@import 'components/carousel';
+@import 'components/services';
+
+@import 'pages/news';
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	margin-top: $navbar-height;
+}

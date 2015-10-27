@@ -1,0 +1,162 @@
+#bootstrap-overrides .navbar-brand, #bootstrap-overrides .navbar-nav a {
+  color: #333;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 0 20px;
+  line-height: 80px;
+  height: auto; }
+
+.btn-custom {
+  color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 2px solid #fff;
+  border-radius: 0;
+  /*padding: 8px 20px;*/
+  transition: all 0.5s; }
+  .btn-custom:hover {
+    color: #41C4AB;
+    background-color: #fff; }
+
+.btn-primary {
+  color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #41C4AB;
+  border: none;
+  border-radius: 0; }
+
+#bootstrap-overrides .navbar-default {
+  border: none;
+  background-color: #fff;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  margin: 0; }
+
+#bootstrap-overrides .navbar-brand img {
+  display: inline; }
+
+#bootstrap-overrides .navbar-nav a {
+  font-size: 17px;
+  transition: color 0.5s; }
+  #bootstrap-overrides .navbar-nav a:hover {
+    color: #41C4AB; }
+
+#bootstrap-overrides .navbar-collapse {
+  max-height: none;
+  box-shadow: none; }
+
+#bootstrap-overrides .navbar-nav {
+  margin-top: 0;
+  margin-bottom: 0; }
+
+#bootstrap-overrides .navbar-toggle {
+  margin-top: 22px;
+  margin-bottom: 22px;
+  border-width: 2px; }
+
+#bootstrap-overrides .dropdown-menu {
+  padding: 0; }
+
+#bootstrap-overrides .open > a {
+  background-color: #eee; }
+
+#bootstrap-overrides .dropdown-menu a {
+  line-height: 50px; }
+
+#bootstrap-overrides .dropdown-menu a:hover {
+  background-color: transparent; }
+
+#carousel .item {
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.carousel-inner .item:nth-of-type(1) {
+  background-image: url("/images/slide1.jpg"); }
+
+.carousel-inner .item:nth-of-type(2) {
+  background-image: url("/images/slide2.jpg"); }
+
+#bootstrap-overrides .carousel-caption h1 {
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.carousel-caption span {
+  color: #41C4AB; }
+
+#bootstrap-overrides .carousel-caption p {
+  font-size: 22px;
+  font-weight: 300;
+  margin-bottom: 20px; }
+
+#services {
+  padding: 100px 0;
+  text-align: center; }
+
+#services h1 {
+  margin-top: 0;
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+#services i {
+  color: #41C4AB; }
+
+#services h2 {
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+#services p {
+  font-size: 22px;
+  font-weight: 300;
+  margin-bottom: 0; }
+
+#services .row > * {
+  margin-top: 40px; }
+  @media (min-width: 768px) {
+    #services .row > * {
+      margin-top: 20px; } }
+
+.light {
+  max-width: 50px;
+  border-width: 3px;
+  border-color: #41C4AB;
+  margin-bottom: 0; }
+
+#news {
+  padding: 50px 0; }
+
+#news h1 {
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 0; }
+
+#news h2 {
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.news-date {
+  font-size: 17px;
+  font-style: italic;
+  font-weight: 300; }
+
+.news-content {
+  font-size: 22px;
+  font-weight: 300; }
+
+.news-post hr {
+  border-color: #ccc; }
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-top: 80px; }
+
+/*# sourceMappingURL=app.css.map */

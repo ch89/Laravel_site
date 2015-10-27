@@ -1,0 +1,42 @@
+#services {
+	padding: 100px 0;
+	text-align: center;
+}
+
+#services h1 {
+	margin-top: 0;
+	font-size: 32px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+#services i {
+	color: $primary-color;
+}
+
+#services h2 {
+	font-size: 22px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+#services p {
+	font-size: 22px;
+	font-weight: 300;
+	margin-bottom: 0;
+}
+
+#services .row > * {
+	margin-top: 40px;
+
+	@media (min-width: $md) {
+		margin-top: 20px;
+	}
+}
+
+.light {
+	max-width: 50px;
+	border-width: 3px;
+	border-color: $primary-color;
+	margin-bottom: 0;
+}

@@ -4,10 +4,10 @@
 
 <section id='news'>
 	<div class='container'>
-		<h1>Create</h1>
+		<h1>Edit</h1>
 		<hr class='light'>
 
-		{!! Form::open(['route' => 'news.store']) !!}
+		{!! Form::model($newspost, ['route' => ['news.update', $newspost->slug], 'method' => 'patch']) !!}
 			<div class='form-group'>
 				{!! Form::label('title', 'Title') !!}
 				{!! Form::text('title', null, ['class' => 'form-control']) !!}
@@ -19,7 +19,7 @@
 			</div>
 
 			<div class='form-group'>
-				{!! Form::submit('Add', ['class' => 'btn btn-primary']) !!}
+				{!! Form::submit('Update', ['class' => 'btn btn-primary']) !!}
 			</div>
 		{!! Form::close() !!}
 

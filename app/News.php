@@ -9,7 +9,8 @@ class News extends Model
 {
 	protected $fillable = [
 		'title',
-		'content'
+		'content',
+		'author'
 	];
 
 	public function setTitleAttribute($value) {

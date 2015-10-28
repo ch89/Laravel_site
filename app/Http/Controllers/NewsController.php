@@ -7,9 +7,15 @@ use App\News;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use Auth;
 
 class NewsController extends Controller
 {
+
+    public function __construct() {
+        $this->middleware('auth', ['except' => ['index', 'show']]);
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -38,7 +44,11 @@ class NewsController extends Controller
      */
     public function store(NewsRequest $request)
     {
-        News::create($request->all());
+        $data = $request->all();
+        $data['author'] = Auth::user()->name;
+
+
+        News::create($data);
 
         return redirect()->route('news.index');
     }
@@ -60,9 +70,9 @@ class NewsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(News $newspost)
     {
-        //
+        return view('news.edit')->with('newspost', $newspost);
     }
 
     /**
@@ -72,9 +82,11 @@ class NewsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(NewsRequest $request, News $newspost)
     {
-        //
+        $newspost->update($request->all());
+
+        return redirect()->route('news.index');
     }
 
     /**

@@ -23,9 +23,15 @@ class NewsRequest extends Request
      */
     public function rules()
     {
-        return [
-            'title' => ['required', 'min:2', 'unique:news'],
+        $rules = [
+            'title' => ['required', 'min:2'],
             'content' => 'required'
         ];
+
+        if($this->isMethod('post')) {
+            array_push($rules['title'], 'unique:news');
+        }
+
+        return $rules;
     }
 }
